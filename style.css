@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6eff6;
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 100%;
+    padding: 5% 10%;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+h3 {
+    padding-bottom: 8%;
+    font-size: 15px;
+}
+
+
+/* --------------------- wrapper div---------------------- */
+
+.wrapper {
+    margin: 20% 7%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.wrapper>* {
+    padding: 10%;
+}
+
+.wrapper>*>h1, h2 {
+    font-weight: 700;
+    padding-bottom: 8%;
+}
+
+.wrapper>*>h1 {
+    font-size: 1.3rem;
+}
+
+.wrapper>*>h2 {
+    font-size: 1.2rem;
+}
+
+
+/* ------------------------ join class ----------------- */
+
+.join {
+    background-color: #ffffff;
+}
+
+.join h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.join h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+.join p {
+    color: hsl(218, 22%, 67%);
+    line-height: 20px;
+}
+
+
+/* --------------------------- subscription class ------------- */
+.subscription {
+    background-color: #2bb3b1;
+    color: #fff;
+}
+
+.price {
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-bottom: 8%;
+    display: flex;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+}
+
+.price span {
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+    align-self: center;
+    padding-left: 5%;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+}
+
+.subscription p {
+    padding-bottom: 8%;
+}
+
+
+/* ----------------------- why-us class --------------------------- */
+
+.why-us {
+    background-color: #4abebd;
+    color: #fff;
+}
+
+.why-us li {
+    font-size: 0.8rem;
+    padding: 1% 0;
+    color: hsl(204, 43%, 93%);
+}
