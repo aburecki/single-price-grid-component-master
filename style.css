@@ -82,7 +82,8 @@ h3 {
 
 .join p {
     color: hsl(218, 22%, 67%);
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 0.9rem;
 }
 
 
