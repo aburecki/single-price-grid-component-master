@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
+html {
+    font-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
-    font-size: 16px;
 }
 
 ul {
@@ -14,14 +17,9 @@ ul {
 
 body {
     width: 100vw;
-    /* height: 100vh; */
     background-color: #e6eff6;
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* max-height: 200px;
-    max-width: 600px; */
-    /* margin: 0 auto; */
+
 }
 
 button {
@@ -33,10 +31,7 @@ button {
     color: #fff;
 }
 
-h3 {
-    padding-bottom: 8%;
-    font-size: 15px;
-}
+
 
 
 /* --------------------- wrapper div---------------------- */
@@ -48,25 +43,28 @@ h3 {
     border-radius: 5px;
     overflow: hidden;
     max-width: 350px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.07), 0 6px 6px rgba(0,0,0,0.15);
     
 
 }
 
-.wrapper>* {
+ .join, .subscription, .why-us  {
     padding: 10%;
 }
 
-.wrapper>*>h1, h2 {
+
+ h1, h2 {
     font-weight: 700;
     padding-bottom: 8%;
 }
 
-.wrapper>*>h1 {
-    font-size: 1.3rem;
+
+ h1 {
+    font-size: 2rem;
 }
 
-.wrapper>*>h2 {
-    font-size: 1.2rem;
+ h2 {
+    font-size: 1.1rem;
 }
 
 
@@ -78,16 +76,21 @@ h3 {
 
 .join h1 {
     color: hsl(179, 62%, 43%);
+    font-size: 1.3rem;
+    padding-bottom: 8%;
 }
 
 .join h3 {
     color: hsl(71, 73%, 54%);
+    padding: 0 0 3%;
+    font-size: 1.1rem;
 }
 
 .join p {
     color: hsl(218, 22%, 67%);
     line-height: 25px;
     font-size: 0.9rem;
+    font-weight: 400;
 }
 
 
@@ -98,12 +101,10 @@ h3 {
 }
 
 .price {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 700;
     padding-bottom: 8%;
     display: flex;
-    /* display: inline-block; */
-    /* vertical-align: middle; */
 }
 
 .price span {
@@ -111,12 +112,13 @@ h3 {
     font-weight: 400;
     align-self: center;
     padding-left: 5%;
-    /* display: inline-block; */
-    /* vertical-align: middle; */
+    font-size: 1rem;
+
 }
 
 .subscription p {
-    padding-bottom: 8%;
+    padding-bottom: 10%;
+    font-weight: 400;
 }
 
 
@@ -135,8 +137,50 @@ h3 {
 
 
 
-@media (min-width: 376px) {
-    body {
-        /* background-color:red; */
+@media (min-width: 1440px) {
+    
+    html {
+        font-size: 18px;
     }
+    
+    
+    body {
+        background-color: #f5f5f6;
+    }
+
+    .wrapper {
+        min-height: 530px;
+        min-width: 700px;
+        flex-wrap: wrap;
+        
+    }
+
+    .second-row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+
+
+    .join, .subscription, .why-us  {
+        padding: 6%;
+    }
+
+    .subscription {
+        flex: 1;
+    }
+
+    .why-us {
+        flex: 1;
+    }
+
+
+
+    .join h1 {
+        padding-bottom: 4%;
+    }
+
+
 }
